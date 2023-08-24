@@ -1,0 +1,10 @@
+CREATE TABLE all_animal AS
+SELECT * FROM dogs
+UNION
+SELECT * FROM cats
+UNION
+SELECT * FROM humsters
+UNION
+SELECT * FROM horses
+UNION
+SELECT * FROM donkeys

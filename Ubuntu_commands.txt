@@ -1,0 +1,1284 @@
+vv@Ubuntu2:~$ cat > pet_animals
+
+Джек собака
+
+Хомка хомяк
+
+Киса кошка
+
+Полкан собака
+
+Муся кошка
+
+vv@Ubuntu2:~$ cat > pack_animals
+
+Рита лошадь
+
+Кэмел верблюд
+
+Джон осел
+
+Орел конь
+
+Льюис верблюд
+
+Кетрин ослицаvv@Ubuntu2:~$ 
+
+vv@Ubuntu2:~$ cat pet_animals
+
+Джек собака
+
+Хомка хомяк
+
+Киса кошка
+
+Полкан собака
+
+Муся кошка
+
+vv@Ubuntu2:~$ cat pack_animals
+
+Рита лошадь
+
+Кэмел верблюд
+
+Джон осел
+
+Орел конь
+
+Льюис верблюд
+
+Кетрин ослицаvv@Ubuntu2:~$ 
+
+vv@Ubuntu2:~$ cat pet_animals pack_animals > people_friends
+
+vv@Ubuntu2:~$ ls -l
+
+итого 48
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Desktop
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Documents
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Downloads
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Music
+
+-rw-rw-r-- 1 vv vv  135 июл 27 20:41 pack_animals
+
+-rw-rw-r-- 1 vv vv  245 июл 27 20:44 people_friends
+
+-rw-rw-r-- 1 vv vv  110 июл 27 20:38 pet_animals
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Pictures
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Public
+
+drwx------ 3 vv vv 4096 июл 26 20:49 snap
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Templates
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Videos
+
+-rw-rw-r-- 1 vv vv    0 июл 26 22:02 Домашние
+
+vv@Ubuntu2:~$ cat people_friends
+
+Джек собака
+
+Хомка хомяк
+
+Киса кошка
+
+Полкан собака
+
+Муся кошка
+
+Рита лошадь
+
+Кэмел верблюд
+
+Джон осел
+
+Орел конь
+
+Льюис верблюд
+
+Кетрин ослицаvv@Ubuntu2:~$ 
+
+vv@Ubuntu2:~$ mkdir animals
+
+vv@Ubuntu2:~$ ls -l
+
+итого 52
+
+drwxrwxr-x 2 vv vv 4096 июл 27 20:45 animals
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Desktop
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Documents
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Downloads
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Music
+
+-rw-rw-r-- 1 vv vv  135 июл 27 20:41 pack_animals
+
+-rw-rw-r-- 1 vv vv  245 июл 27 20:44 people_friends
+
+-rw-rw-r-- 1 vv vv  110 июл 27 20:38 pet_animals
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Pictures
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Public
+
+drwx------ 3 vv vv 4096 июл 26 20:49 snap
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Templates
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Videos
+
+-rw-rw-r-- 1 vv vv    0 июл 26 22:02 Домашние
+
+vv@Ubuntu2:~$ mv people_friends animals/
+
+vv@Ubuntu2:~$ ls -l
+
+итого 48
+
+drwxrwxr-x 2 vv vv 4096 июл 27 20:48 animals
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Desktop
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Documents
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Downloads
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Music
+
+-rw-rw-r-- 1 vv vv  135 июл 27 20:41 pack_animals
+
+-rw-rw-r-- 1 vv vv  110 июл 27 20:38 pet_animals
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Pictures
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Public
+
+drwx------ 3 vv vv 4096 июл 26 20:49 snap
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Templates
+
+drwxr-xr-x 2 vv vv 4096 июл 26 20:49 Videos
+
+-rw-rw-r-- 1 vv vv    0 июл 26 22:02 Домашние
+
+vv@Ubuntu2:~$ cd animals
+
+vv@Ubuntu2:~/animals$ ls -l
+
+итого 4
+
+-rw-rw-r-- 1 vv vv 245 июл 27 20:44 people_friends
+
+vv@Ubuntu2:~/animals$ sudo apt update
+
+[sudo] пароль для vv: 
+
+vv отсутствует в файле sudoers. Данное действие будет занесено в журнал.
+
+vv@Ubuntu2:~/animals$ su -l root
+
+Пароль: 
+
+su: Сбой при проверке подлинности
+
+vv@Ubuntu2:~/animals$ su -l root
+
+Пароль: 
+
+root@Ubuntu2:~# groups vv
+
+vv : vv vboxsf
+
+root@Ubuntu2:~# usermod -aG sudo vv
+
+root@Ubuntu2:~# groups vv
+
+vv : vv sudo vboxsf
+
+root@Ubuntu2:~# exit
+
+выход
+
+vv@Ubuntu2:~/animals$ sudo apt update
+
+[sudo] пароль для vv: 
+
+vv отсутствует в файле sudoers. Данное действие будет занесено в журнал.
+
+vv@Ubuntu2:~/animals$ su -l root
+
+Пароль: 
+
+root@Ubuntu2:~# apt update
+
+vv@Ubuntu2:~$ history
+
+    1  cat > Домашние животные
+
+    2  cat
+
+    3  ls -l
+
+    4  cat Домашние животные
+
+    5  cat > pet_animals
+
+    6  cat > pack_animals
+
+    7  cat pet_animals
+
+    8  cat pack_animals
+
+    9  cat pet_animals pack_animals > people_friends
+
+   10  ls -l
+
+   11  cat people_friends
+
+   12  mkdir animals
+
+   13  ls -l
+
+   14  mv people_friends animals/
+
+   15  ls -l
+
+   16  cd animals
+
+   17  ls -l
+
+   18  sudo apt update
+
+   19  su -l root
+
+   20  sudo apt update
+
+   21  su -l root
+
+   22  history
+
+vv@Ubuntu2:~$ 
+
+vv@Ubuntu2:~$ sudo apt update
+
+[sudo] пароль для vv: 
+
+Сущ:1 http://security.ubuntu.com/ubuntu jammy-security InRelease                  
+
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu jammy InRelease                         
+
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease
+
+Сущ:4 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease
+
+Чтение списков пакетов… Готово            
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Может быть обновлено 11 пакетов. Запустите «apt list --upgradable» для их показа.
+
+vv@Ubuntu2:~$ sudo apt upgrade
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Расчёт обновлений… Готово
+
+Следующие пакеты будут оставлены в неизменном виде:
+
+  gjs gnome-control-center gnome-control-center-data gnome-control-center-faces libgjs0g
+
+  yaru-theme-gnome-shell yaru-theme-gtk yaru-theme-icon yaru-theme-sound
+
+Следующие пакеты будут обновлены:
+
+  libldap-2.5-0 libldap-common
+
+Обновлено 2 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 9 пакетов не обновлено.
+
+Необходимо скачать 199 kB архивов.
+
+После данной операции объём занятого дискового пространства возрастёт на 0 B.
+
+Хотите продолжить? [Д/н] Y
+
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-2.5-0 amd64 2.5.15+dfsg-0ubuntu0.22.04.1 [183 kB]
+
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-common all 2.5.15+dfsg-0ubuntu0.22.04.1 [15,8 kB]
+
+Получено 199 kB за 1с (337 kB/s)     
+
+(Чтение базы данных … на данный момент установлено 208278 файлов и каталогов.)
+
+Подготовка к распаковке …/libldap-2.5-0_2.5.15+dfsg-0ubuntu0.22.04.1_amd64.deb …
+
+Распаковывается libldap-2.5-0:amd64 (2.5.15+dfsg-0ubuntu0.22.04.1) на замену (2.5.13+dfsg-0ubuntu
+
+0.22.04.1) …
+
+Подготовка к распаковке …/libldap-common_2.5.15+dfsg-0ubuntu0.22.04.1_all.deb …
+
+Распаковывается libldap-common (2.5.15+dfsg-0ubuntu0.22.04.1) на замену (2.5.13+dfsg-0ubuntu0.22.
+
+04.1) …
+
+Настраивается пакет libldap-common (2.5.15+dfsg-0ubuntu0.22.04.1) …
+
+Настраивается пакет libldap-2.5-0:amd64 (2.5.15+dfsg-0ubuntu0.22.04.1) …
+
+Обрабатываются триггеры для man-db (2.10.2-1) …
+
+Обрабатываются триггеры для libc-bin (2.35-0ubuntu3.1) …
+
+vv@Ubuntu2:~$ sudo dpkg -i ~/Dowloads/mysql-apt-config_0.8.26-1_all.deb
+
+dpkg: ошибка: нет доступа к архиву «/home/vv/Dowloads/mysql-apt-config_0.8.26-1_all.deb»: Нет такого файла или каталога
+
+vv@Ubuntu2:~$ cd Dowloads
+
+bash: cd: Dowloads: Нет такого файла или каталога
+
+vv@Ubuntu2:~$ sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.26-1_all.deb
+
+Выбор ранее не выбранного пакета mysql-apt-config.
+
+(Чтение базы данных … на данный момент установлено 208278 файлов и каталогов.)
+
+Подготовка к распаковке …/mysql-apt-config_0.8.26-1_all.deb …
+
+Распаковывается mysql-apt-config (0.8.26-1) …
+
+Настраивается пакет mysql-apt-config (0.8.26-1) …
+
+vv@Ubuntu2:~$ sudo apt update
+
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease                        
+
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease                             
+
+Пол:4 http://repo.mysql.com/apt/ubuntu jammy InRelease [20,3 kB]                                
+
+Сущ:5 http://security.ubuntu.com/ubuntu jammy-security InRelease                                
+
+Пол:6 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 Sources [963 B]
+
+Пол:7 http://repo.mysql.com/apt/ubuntu jammy/mysql-apt-config amd64 Packages [565 B]
+
+Пол:8 http://repo.mysql.com/apt/ubuntu jammy/mysql-apt-config i386 Packages [565 B]
+
+Пол:9 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 Packages [12,7 kB]
+
+Пол:10 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools i386 Packages [457 B]
+
+Пол:11 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools amd64 Packages [8 011 B]
+
+Получено 43,5 kB за 1с (32,1 kB/s)         
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Может быть обновлено 9 пакетов. Запустите «apt list --upgradable» для их показа.
+
+vv@Ubuntu2:~$ sudo apt install mysql-server mysql-client
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Будут установлены следующие дополнительные пакеты:
+
+  libaio1 libmecab2 mecab-ipadic mecab-ipadic-utf8 mecab-utils mysql-common
+
+  mysql-community-client mysql-community-client-core mysql-community-client-plugins
+
+  mysql-community-server mysql-community-server-core
+
+Следующие НОВЫЕ пакеты будут установлены:
+
+  libaio1 libmecab2 mecab-ipadic mecab-ipadic-utf8 mecab-utils mysql-client mysql-common
+
+  mysql-community-client mysql-community-client-core mysql-community-client-plugins
+
+  mysql-community-server mysql-community-server-core mysql-server
+
+Обновлено 0 пакетов, установлено 13 новых пакетов, для удаления отмечено 0 пакетов, и 9 пакетов не обновлено.
+
+Необходимо скачать 37,7 MB архивов.
+
+После данной операции объём занятого дискового пространства возрастёт на 273 MB.
+
+Хотите продолжить? [Д/н] Y
+
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libaio1 amd64 0.3.112-13build1 [7 176 B]
+
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libmecab2 amd64 0.996-14build9 [199 kB]
+
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-utils amd64 0.996-14build9 [4 850 B]
+
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-ipadic all 2.7.0-20070801+main-3 [6 718 kB]
+
+Пол:5 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-common amd64 8.0.34-1ubuntu22.04 [67,7 kB]
+
+Пол:6 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client-plugins amd64 8.0.34-1ubuntu22.04 [1 435 kB]
+
+Пол:7 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client-core amd64 8.0.34-1ubuntu22.04 [2 087 kB]
+
+Пол:8 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client amd64 8.0.34-1ubuntu22.04 [2 113 kB]
+
+Пол:9 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-client amd64 8.0.34-1ubuntu22.04 [66,4 kB]
+
+Пол:10 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-server-core amd64 8.0.34-1ubuntu22.04 [24,8 MB]
+
+Пол:11 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-server amd64 8.0.34-1ubuntu22.04 [78,2 kB]
+
+Пол:12 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-server amd64 8.0.34-1ubuntu22.04 [66,4 kB]
+
+Пол:13 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-ipadic-utf8 all 2.7.0-20070801+main-3 [4 384 B]
+
+Получено 37,7 MB за 36с (1 046 kB/s)                                                            
+
+Предварительная настройка пакетов …
+
+Выбор ранее не выбранного пакета mysql-common.
+
+(Чтение базы данных … на данный момент установлено 208283 файла и каталога.)
+
+Подготовка к распаковке …/00-mysql-common_8.0.34-1ubuntu22.04_amd64.deb …
+
+Распаковывается mysql-common (8.0.34-1ubuntu22.04) …
+
+Выбор ранее не выбранного пакета mysql-community-client-plugins.
+
+Подготовка к распаковке …/01-mysql-community-client-plugins_8.0.34-1ubuntu22.04_amd64.deb …
+
+Распаковывается mysql-community-client-plugins (8.0.34-1ubuntu22.04) …
+
+Выбор ранее не выбранного пакета mysql-community-client-core.
+
+Подготовка к распаковке …/02-mysql-community-client-core_8.0.34-1ubuntu22.04_amd64.deb …
+
+Распаковывается mysql-community-client-core (8.0.34-1ubuntu22.04) …
+
+Выбор ранее не выбранного пакета mysql-community-client.
+
+Подготовка к распаковке …/03-mysql-community-client_8.0.34-1ubuntu22.04_amd64.deb …
+
+Распаковывается mysql-community-client (8.0.34-1ubuntu22.04) …
+
+Выбор ранее не выбранного пакета mysql-client.
+
+Подготовка к распаковке …/04-mysql-client_8.0.34-1ubuntu22.04_amd64.deb …
+
+Распаковывается mysql-client (8.0.34-1ubuntu22.04) …
+
+Выбор ранее не выбранного пакета libaio1:amd64.
+
+Подготовка к распаковке …/05-libaio1_0.3.112-13build1_amd64.deb …
+
+Распаковывается libaio1:amd64 (0.3.112-13build1) …
+
+Выбор ранее не выбранного пакета libmecab2:amd64.
+
+Подготовка к распаковке …/06-libmecab2_0.996-14build9_amd64.deb …
+
+Распаковывается libmecab2:amd64 (0.996-14build9) …
+
+Выбор ранее не выбранного пакета mysql-community-server-core.
+
+Подготовка к распаковке …/07-mysql-community-server-core_8.0.34-1ubuntu22.04_amd64.deb …
+
+Распаковывается mysql-community-server-core (8.0.34-1ubuntu22.04) …
+
+Выбор ранее не выбранного пакета mysql-community-server.
+
+Подготовка к распаковке …/08-mysql-community-server_8.0.34-1ubuntu22.04_amd64.deb …
+
+Распаковывается mysql-community-server (8.0.34-1ubuntu22.04) …
+
+Выбор ранее не выбранного пакета mecab-utils.
+
+Подготовка к распаковке …/09-mecab-utils_0.996-14build9_amd64.deb …
+
+Распаковывается mecab-utils (0.996-14build9) …
+
+Выбор ранее не выбранного пакета mecab-ipadic.
+
+Подготовка к распаковке …/10-mecab-ipadic_2.7.0-20070801+main-3_all.deb …
+
+Распаковывается mecab-ipadic (2.7.0-20070801+main-3) …
+
+Выбор ранее не выбранного пакета mecab-ipadic-utf8.
+
+Подготовка к распаковке …/11-mecab-ipadic-utf8_2.7.0-20070801+main-3_all.deb …
+
+Распаковывается mecab-ipadic-utf8 (2.7.0-20070801+main-3) …
+
+Выбор ранее не выбранного пакета mysql-server.
+
+Подготовка к распаковке …/12-mysql-server_8.0.34-1ubuntu22.04_amd64.deb …
+
+Распаковывается mysql-server (8.0.34-1ubuntu22.04) …
+
+Настраивается пакет libmecab2:amd64 (0.996-14build9) …
+
+Настраивается пакет mysql-common (8.0.34-1ubuntu22.04) …
+
+update-alternatives: используется /etc/mysql/my.cnf.fallback для предоставления /etc/mysql/my.cnf
+
+ (my.cnf) в автоматическом режиме
+
+Настраивается пакет mecab-utils (0.996-14build9) …
+
+Настраивается пакет mysql-community-client-plugins (8.0.34-1ubuntu22.04) …
+
+Настраивается пакет libaio1:amd64 (0.3.112-13build1) …
+
+Настраивается пакет mecab-ipadic (2.7.0-20070801+main-3) …
+
+Compiling IPA dictionary for Mecab.  This takes long time...
+
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+
+emitting double-array: 100% |###########################################| 
+
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+
+emitting double-array: 100% |###########################################| 
+
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+
+emitting matrix      : 100% |###########################################| 
+
+
+
+done!
+
+update-alternatives: используется /var/lib/mecab/dic/ipadic для предоставления /var/lib/mecab/dic
+
+/debian (mecab-dictionary) в автоматическом режиме
+
+Настраивается пакет mysql-community-client-core (8.0.34-1ubuntu22.04) …
+
+Настраивается пакет mysql-community-server-core (8.0.34-1ubuntu22.04) …
+
+Настраивается пакет mecab-ipadic-utf8 (2.7.0-20070801+main-3) …
+
+Compiling IPA dictionary for Mecab.  This takes long time...
+
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+
+emitting double-array: 100% |###########################################| 
+
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+
+emitting double-array: 100% |###########################################| 
+
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+
+emitting matrix      : 100% |###########################################| 
+
+
+
+done!
+
+update-alternatives: используется /var/lib/mecab/dic/ipadic-utf8 для предоставления /var/lib/meca
+
+b/dic/debian (mecab-dictionary) в автоматическом режиме
+
+Настраивается пакет mysql-community-client (8.0.34-1ubuntu22.04) …
+
+Настраивается пакет mysql-client (8.0.34-1ubuntu22.04) …
+
+Настраивается пакет mysql-community-server (8.0.34-1ubuntu22.04) …
+
+update-alternatives: используется /etc/mysql/mysql.cnf для предоставления /etc/mysql/my.cnf (my.c
+
+nf) в автоматическом режиме
+
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /lib/systemd/system/m
+
+ysql.service.
+
+Настраивается пакет mysql-server (8.0.34-1ubuntu22.04) …
+
+Обрабатываются триггеры для man-db (2.10.2-1) …
+
+Обрабатываются триггеры для libc-bin (2.35-0ubuntu3.1) …
+
+vv@Ubuntu2:~$ mysql_secure_installation
+
+
+
+Securing the MySQL server deployment.
+
+
+
+Enter password for user root: 
+
+
+
+VALIDATE PASSWORD COMPONENT can be used to test passwords
+
+and improve security. It checks the strength of password
+
+and allows the users to set only those passwords which are
+
+secure enough. Would you like to setup VALIDATE PASSWORD component?
+
+
+
+Press y|Y for Yes, any other key for No: N
+
+Using existing password for root.
+
+Change the password for root ? ((Press y|Y for Yes, any other key for No) : N
+
+
+
+ ... skipping.
+
+By default, a MySQL installation has an anonymous user,
+
+allowing anyone to log into MySQL without having to have
+
+a user account created for them. This is intended only for
+
+testing, and to make the installation go a bit smoother.
+
+You should remove them before moving into a production
+
+environment.
+
+
+
+Remove anonymous users? (Press y|Y for Yes, any other key for No) : N
+
+
+
+ ... skipping.
+
+
+
+
+
+Normally, root should only be allowed to connect from
+
+'localhost'. This ensures that someone cannot guess at
+
+the root password from the network.
+
+
+
+Disallow root login remotely? (Press y|Y for Yes, any other key for No) : N
+
+
+
+ ... skipping.
+
+By default, MySQL comes with a database named 'test' that
+
+anyone can access. This is also intended only for testing,
+
+and should be removed before moving into a production
+
+environment.
+
+
+
+
+
+Remove test database and access to it? (Press y|Y for Yes, any other key for No) : N
+
+
+
+ ... skipping.
+
+Reloading the privilege tables will ensure that all changes
+
+made so far will take effect immediately.
+
+
+
+Reload privilege tables now? (Press y|Y for Yes, any other key for No) : Y
+
+Success.
+
+
+
+All done! 
+
+vv@Ubuntu2:~$ sudo apt-add-repository ppa:nginx/stable
+
+[sudo] пароль для vv: 
+
+Репозиторий: 'deb https://ppa.launchpadcontent.net/nginx/stable/ubuntu/ jammy main'
+
+Описание:
+
+This PPA contains the latest Stable Release version of the nginx web server software.
+
+
+
+**Only Non-End-of-Life Ubuntu Releases are supported in this PPA**
+
+
+
+**Development releases of Ubuntu are not officially supported by this PPA, and uploads for those will not be available until actual final releases for those versions**
+
+Дополнительные сведения: https://launchpad.net/~nginx/+archive/ubuntu/stable
+
+Добавление репозитория.
+
+Нажмите [ENTER] для продолжения или Ctrl-C для отмены.
+
+Adding deb entry to /etc/apt/sources.list.d/nginx-ubuntu-stable-jammy.list
+
+Adding disabled deb-src entry to /etc/apt/sources.list.d/nginx-ubuntu-stable-jammy.list
+
+Adding key to /etc/apt/trusted.gpg.d/nginx-ubuntu-stable.gpg with fingerprint 8B3981E7A6852F782CC4951600A6F0A3C300EE8C
+
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+
+Сущ:2 http://repo.mysql.com/apt/ubuntu jammy InRelease                                          
+
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease                               
+
+Сущ:4 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease                             
+
+Пол:5 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]                       
+
+Игн:6 https://ppa.launchpadcontent.net/nginx/stable/ubuntu jammy InRelease                      
+
+Ошб:7 https://ppa.launchpadcontent.net/nginx/stable/ubuntu jammy Release
+
+  404  Not Found [IP: 185.125.190.52 443]
+
+Чтение списков пакетов… Готово
+
+E: Репозиторий «https://ppa.launchpadcontent.net/nginx/stable/ubuntu jammy Release» не содержит файла Release.
+
+N: Обновление из этого репозитория нельзя выполнить безопасным способом, поэтому по умолчанию он отключён.
+
+N: Информацию о создании репозитория и настройках пользователя смотрите в справочной странице apt-secure(8).
+
+vv@Ubuntu2:~$ sudo apt update
+
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease                               
+
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease                             
+
+Сущ:4 http://repo.mysql.com/apt/ubuntu jammy InRelease                                          
+
+Игн:5 https://ppa.launchpadcontent.net/nginx/stable/ubuntu jammy InRelease                      
+
+Сущ:6 http://security.ubuntu.com/ubuntu jammy-security InRelease                                
+
+Ошб:7 https://ppa.launchpadcontent.net/nginx/stable/ubuntu jammy Release
+
+  404  Not Found [IP: 185.125.190.52 443]
+
+Чтение списков пакетов… Готово            
+
+E: Репозиторий «https://ppa.launchpadcontent.net/nginx/stable/ubuntu jammy Release» не содержит файла Release.
+
+N: Обновление из этого репозитория нельзя выполнить безопасным способом, поэтому по умолчанию он отключён.
+
+N: Информацию о создании репозитория и настройках пользователя смотрите в справочной странице apt-secure(8).
+
+vv@Ubuntu2:~$ apt list nginx
+
+Вывод списка… Готово
+
+nginx/jammy-updates 1.18.0-6ubuntu14.4 amd64
+
+N: Есть 2 дополнительные версии. Используйте «-a» для их просмотра.
+
+vv@Ubuntu2:~$ sudo apt download nginx
+
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx amd64 1.18.0-6ubuntu14.4 [3 872 B]
+
+Получено 3 872 B за 0с (33,4 kB/s)
+
+W: Загрузка выполняется от лица суперпользователя без ограничений песочницы, так как файл «/home/vv/nginx_1.18.0-6ubuntu14.4_amd64.deb» недоступен для пользователя «_apt». - pkgAcquire::Run (13: Отказано в доступе)
+
+vv@Ubuntu2:~$ sudo dpkg -i nginx_1.18.0-6ubuntu14.4_amd64.deb
+
+Выбор ранее не выбранного пакета nginx.
+
+(Чтение базы данных … на данный момент установлено 208643 файла и каталога.)
+
+Подготовка к распаковке nginx_1.18.0-6ubuntu14.4_amd64.deb …
+
+Распаковывается nginx (1.18.0-6ubuntu14.4) …
+
+dpkg: зависимости пакетов не позволяют настроить пакет nginx:
+
+ nginx зависит от nginx-core (<< 1.18.0-6ubuntu14.4.1~) | nginx-full (<< 1.18.0-6ubuntu14.4.1~) | nginx-light (<< 1.18.0-6ubuntu14.4.1~) | nginx-extras (<< 1.18.0-6ubuntu14.4.1~), однако:
+
+  Пакет nginx-core не установлен.
+
+  Пакет nginx-full не установлен.
+
+  Пакет nginx-light не установлен.
+
+  Пакет nginx-extras не установлен.
+
+ nginx зависит от nginx-core (>= 1.18.0-6ubuntu14.4) | nginx-full (>= 1.18.0-6ubuntu14.4) | nginx-light (>= 1.18.0-6ubuntu14.4) | nginx-extras (>= 1.18.0-6ubuntu14.4), однако:
+
+  Пакет nginx-core не установлен.
+
+  Пакет nginx-full не установлен.
+
+  Пакет nginx-light не установлен.
+
+  Пакет nginx-extras не установлен.
+
+
+
+dpkg: ошибка при обработке пакета nginx (--install):
+
+ проблемы зависимостей — оставляем не настроенным
+
+При обработке следующих пакетов произошли ошибки:
+
+ nginx
+
+vv@Ubuntu2:~$ apt -f install
+
+E: Не удалось открыть файл блокировки /var/lib/dpkg/lock-frontend - open (13: Отказано в доступе)
+
+E: Невозможно получить блокировку внешнего интерфейса dpkg (/var/lib/dpkg/lock-frontend); у вас есть права суперпользователя?
+
+vv@Ubuntu2:~$ sudo apt -f install
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Исправление зависимостей… Готово
+
+Будут установлены следующие дополнительные пакеты:
+
+  libnginx-mod-http-geoip2 libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter
+
+  libnginx-mod-mail libnginx-mod-stream libnginx-mod-stream-geoip2 nginx-common nginx-core
+
+Предлагаемые пакеты:
+
+  fcgiwrap nginx-doc
+
+Следующие НОВЫЕ пакеты будут установлены:
+
+  libnginx-mod-http-geoip2 libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter
+
+  libnginx-mod-mail libnginx-mod-stream libnginx-mod-stream-geoip2 nginx-common nginx-core
+
+Обновлено 0 пакетов, установлено 8 новых пакетов, для удаления отмечено 0 пакетов, и 9 пакетов не обновлено.
+
+Установлено или удалено не до конца 1 пакетов.
+
+Необходимо скачать 693 kB архивов.
+
+После данной операции объём занятого дискового пространства возрастёт на 2 345 kB.
+
+Хотите продолжить? [Д/н] Y
+
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-common all 1.18.0-6ubuntu14.4 [40,0 kB]
+
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-image-filter amd64 1.18.0-6ubuntu14.4 [15,4 kB]
+
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.18.0-6ubuntu14.4 [13,7 kB]
+
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-geoip2 amd64 1.18.0-6ubuntu14.4 [11,9 kB]
+
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-mail amd64 1.18.0-6ubuntu14.4 [45,7 kB]
+
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream amd64 1.18.0-6ubuntu14.4 [72,9 kB]
+
+Пол:7 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream-geoip2 amd64 1.18.0-6ubuntu14.4 [10,1 kB]
+
+Пол:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-core amd64 1.18.0-6ubuntu14.4 [484 kB]
+
+Получено 693 kB за 2с (298 kB/s)    
+
+Предварительная настройка пакетов …
+
+Выбор ранее не выбранного пакета nginx-common.
+
+(Чтение базы данных … на данный момент установлено 208646 файлов и каталогов.)
+
+Подготовка к распаковке …/0-nginx-common_1.18.0-6ubuntu14.4_all.deb …
+
+Распаковывается nginx-common (1.18.0-6ubuntu14.4) …
+
+Выбор ранее не выбранного пакета libnginx-mod-http-image-filter.
+
+Подготовка к распаковке …/1-libnginx-mod-http-image-filter_1.18.0-6ubuntu14.4_amd64.deb …
+
+Распаковывается libnginx-mod-http-image-filter (1.18.0-6ubuntu14.4) …
+
+Выбор ранее не выбранного пакета libnginx-mod-http-xslt-filter.
+
+Подготовка к распаковке …/2-libnginx-mod-http-xslt-filter_1.18.0-6ubuntu14.4_amd64.deb …
+
+Распаковывается libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.4) …
+
+Выбор ранее не выбранного пакета libnginx-mod-http-geoip2.
+
+Подготовка к распаковке …/3-libnginx-mod-http-geoip2_1.18.0-6ubuntu14.4_amd64.deb …
+
+Распаковывается libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.4) …
+
+Выбор ранее не выбранного пакета libnginx-mod-mail.
+
+Подготовка к распаковке …/4-libnginx-mod-mail_1.18.0-6ubuntu14.4_amd64.deb …
+
+Распаковывается libnginx-mod-mail (1.18.0-6ubuntu14.4) …
+
+Выбор ранее не выбранного пакета libnginx-mod-stream.
+
+Подготовка к распаковке …/5-libnginx-mod-stream_1.18.0-6ubuntu14.4_amd64.deb …
+
+Распаковывается libnginx-mod-stream (1.18.0-6ubuntu14.4) …
+
+Выбор ранее не выбранного пакета libnginx-mod-stream-geoip2.
+
+Подготовка к распаковке …/6-libnginx-mod-stream-geoip2_1.18.0-6ubuntu14.4_amd64.deb …
+
+Распаковывается libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.4) …
+
+Выбор ранее не выбранного пакета nginx-core.
+
+Подготовка к распаковке …/7-nginx-core_1.18.0-6ubuntu14.4_amd64.deb …
+
+Распаковывается nginx-core (1.18.0-6ubuntu14.4) …
+
+Настраивается пакет nginx-common (1.18.0-6ubuntu14.4) …
+
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/n
+
+ginx.service.
+
+Настраивается пакет libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.4) …
+
+Настраивается пакет libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.4) …
+
+Настраивается пакет libnginx-mod-mail (1.18.0-6ubuntu14.4) …
+
+Настраивается пакет libnginx-mod-http-image-filter (1.18.0-6ubuntu14.4) …
+
+Настраивается пакет libnginx-mod-stream (1.18.0-6ubuntu14.4) …
+
+Настраивается пакет libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.4) …
+
+Настраивается пакет nginx-core (1.18.0-6ubuntu14.4) …
+
+ * Upgrading binary nginx                                                                 [ OK ] 
+
+Настраивается пакет nginx (1.18.0-6ubuntu14.4) …
+
+Обрабатываются триггеры для man-db (2.10.2-1) …
+
+Обрабатываются триггеры для ufw (0.36.1-4build1) …
+
+vv@Ubuntu2:~$ sudo dpkg -l nginx
+
+Желаемый=неизвестно[u]/установить[i]/удалить[r]/вычистить[p]/зафиксировать[h]
+
+| Состояние=не[n]/установлен[i]/настроен[c]/распакован[U]/частично настроен[F]/
+
+            частично установлен[H]/trig-aWait/Trig-pend
+
+|/ Ошибка?=(нет)/требуется переустановка[R] (верхний регистр
+
+в полях состояния и ошибки указывает на ненормальную ситуацию)
+
+||/ Имя            Версия             Архитектура  Описание
+
++++-==============-==================-============-==========================================
+
+ii  nginx          1.18.0-6ubuntu14.4 amd64        small, powerful, scalable web/proxy server
+
+vv@Ubuntu2:~$ sudo dpkg -r nginx
+
+(Чтение базы данных … на данный момент установлен 208731 файл и каталог.)
+
+Удаляется nginx (1.18.0-6ubuntu14.4) …
+
+vv@Ubuntu2:~$ sudo dpkg -l nginx
+
+Желаемый=неизвестно[u]/установить[i]/удалить[r]/вычистить[p]/зафиксировать[h]
+
+| Состояние=не[n]/установлен[i]/настроен[c]/распакован[U]/частично настроен[F]/
+
+            частично установлен[H]/trig-aWait/Trig-pend
+
+|/ Ошибка?=(нет)/требуется переустановка[R] (верхний регистр
+
+в полях состояния и ошибки указывает на ненормальную ситуацию)
+
+||/ Имя            Версия       Архитектура  Описание
+
++++-==============-============-============-=======================================
+
+un  nginx          <нет>        <нет>        (описание недоступно)
+
+vv@Ubuntu2:~$ sudo apt autoremove
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей… Готово
+
+Чтение информации о состоянии… Готово         
+
+Следующие пакеты будут УДАЛЕНЫ:
+
+  libnginx-mod-http-geoip2 libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter
+
+  libnginx-mod-mail libnginx-mod-stream libnginx-mod-stream-geoip2 nginx-common nginx-core
+
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 8 пакетов, и 9 пакетов не обновлено.
+
+После данной операции объём занятого дискового пространства уменьшится на 2 345 kB.
+
+Хотите продолжить? [Д/н] Y
+
+(Чтение базы данных … на данный момент установлено 208728 файлов и каталогов.)
+
+Удаляется nginx-core (1.18.0-6ubuntu14.4) …
+
+Удаляется libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.4) …
+
+Удаляется libnginx-mod-http-image-filter (1.18.0-6ubuntu14.4) …
+
+Удаляется libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.4) …
+
+Удаляется libnginx-mod-mail (1.18.0-6ubuntu14.4) …
+
+Удаляется libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.4) …
+
+Удаляется libnginx-mod-stream (1.18.0-6ubuntu14.4) …
+
+Удаляется nginx-common (1.18.0-6ubuntu14.4) …
+
+Обрабатываются триггеры для man-db (2.10.2-1) …
+
+vv@Ubuntu2:~$ history
+
+    1  cat > Домашние животные
+
+    2  cat
+
+    3  ls -l
+
+    4  cat Домашние животные
+
+    5  cat > pet_animals
+
+    6  cat > pack_animals
+
+    7  cat pet_animals
+
+    8  cat pack_animals
+
+    9  cat pet_animals pack_animals > people_friends
+
+   10  ls -l
+
+   11  cat people_friends
+
+   12  mkdir animals
+
+   13  ls -l
+
+   14  mv people_friends animals/
+
+   15  ls -l
+
+   16  cd animals
+
+   17  ls -l
+
+   18  sudo apt update
+
+   19  su -l root
+
+   20  sudo apt update
+
+   21  su -l root
+
+   22  history
+
+   23  sudo apt update
+
+   24  sudo apt upgrade
+
+   25  sudo dpkg -i ~/Dowloads/mysql-apt-config_0.8.26-1_all.deb
+
+   26  cd Dowloads
+
+   27  sudo dpkg -i ~/Downloads/mysql-apt-config_0.8.26-1_all.deb
+
+   28  sudo apt update
+
+   29  sudo apt install mysql-server mysql-client
+
+   30  mysql_secure_installation
+
+   31  sudo apt-add-repository ppa:nginx/stable
+
+   32  sudo apt update
+
+   33  apt list nginx
+
+   34  sudo apt download nginx
+
+   35  sudo dpkg -i nginx_1.18.0-6ubuntu14.4_amd64.deb
+
+   36  apt -f install
+
+   37  sudo apt -f install
+
+   38  sudo dpkg -l nginx
+
+   39  sudo dpkg -r nginx
+
+   40  sudo dpkg -l nginx
+
+   41  sudo apt autoremove
+
+   42  history
+
+vv@Ubuntu2:~$ 
+

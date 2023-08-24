@@ -1,0 +1,197 @@
+CREATE SCHEMA `animals` ;
+
+USE `animals` ;
+
+CREATE TABLE `animals`.`animals` (
+  `id` INT NOT NULL,
+  `animals_type` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+  
+
+CREATE TABLE `animals`.`pet_animals` (
+  `id` INT NOT NULL,
+  `pet_animals_type` VARCHAR(45) NOT NULL,
+  `id_animals` INT NOT NULL,
+  PRIMARY KEY (`id`));
+  
+  ALTER TABLE `animals`.`pet_animals` 
+ADD INDEX `pet_fk_1_idx` (`id_animals` ASC) VISIBLE;
+;
+ALTER TABLE `animals`.`pet_animals` 
+ADD CONSTRAINT `pet_fk_1`
+  FOREIGN KEY (`id_animals`)
+  REFERENCES `animals`.`animals` (`id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+  
+CREATE TABLE `animals`.`pack_animals` (
+  `id` INT NOT NULL,
+  `pack_animals_type` VARCHAR(45) NOT NULL,
+  `id_animals` INT NOT NULL,
+  PRIMARY KEY (`id`));
+
+ALTER TABLE `animals`.`pack_animals` 
+ADD INDEX `pack_fk_1_idx` (`id_animals` ASC) VISIBLE;
+;
+ALTER TABLE `animals`.`pack_animals` 
+ADD CONSTRAINT `pack_fk_1`
+  FOREIGN KEY (`id_animals`)
+  REFERENCES `animals`.`animals` (`id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+CREATE TABLE `animals`.`dogs` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `birth_date` DATETIME NOT NULL,
+  `id_pets` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `dogs_fk_1_idx` (`id_pets` ASC) VISIBLE,
+  CONSTRAINT `dogs_fk_1`
+    FOREIGN KEY (`id_pets`)
+    REFERENCES `animals`.`pet_animals` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
+
+CREATE TABLE `animals`.`cats` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `birth_date` DATETIME NOT NULL,
+  `id_pets` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `cats_fk_1_idx` (`id_pets` ASC) VISIBLE,
+  CONSTRAINT `cats_fk_1`
+    FOREIGN KEY (`id_pets`)
+    REFERENCES `animals`.`pet_animals` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
+
+
+CREATE TABLE `animals`.`humsters` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `birth_date` DATETIME NOT NULL,
+  `id_pets` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `humst_fk_1_idx` (`id_pets` ASC) VISIBLE,
+  CONSTRAINT `humst_fk_1`
+    FOREIGN KEY (`id_pets`)
+    REFERENCES `animals`.`pet_animals` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
+	
+
+
+CREATE TABLE `animals`.`horses` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `birth_date` DATETIME NOT NULL,
+  `id_pack` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `horse_fk_1_idx` (`id_pack` ASC) VISIBLE,
+  CONSTRAINT `horse_fk_1`
+    FOREIGN KEY (`id_pack`)
+    REFERENCES `animals`.`pack_animals` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+	
+
+CREATE TABLE `animals`.`donkeys` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `birth_date` DATETIME NOT NULL,
+  `id_pack` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `donkey_fk_1_idx` (`id_pack` ASC) VISIBLE,
+  CONSTRAINT `donkey_fk_1`
+    FOREIGN KEY (`id_pack`)
+    REFERENCES `animals`.`pack_animals` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+	
+CREATE TABLE `animals`.`camels` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `birth_date` DATETIME NOT NULL,
+  `id_pack` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `camel_fk_1_idx` (`id_pack` ASC) VISIBLE,
+  CONSTRAINT `camel_fk_1`
+    FOREIGN KEY (`id_pack`)
+    REFERENCES `animals`.`pack_animals` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+	
+INSERT INTO `animals`.`animals` (`id`, `animals_type`) VALUES ('1', 'Pet_animals');
+INSERT INTO `animals`.`animals` (`id`, `animals_type`) VALUES ('2', 'Pack_animals');
+
+INSERT INTO `animals`.`pet_animals` (`id`, `pet_animals_type`, `id_animals`) VALUES ('1', 'Dogs', '1');
+INSERT INTO `animals`.`pet_animals` (`id`, `pet_animals_type`, `id_animals`) VALUES ('2', 'Cats', '1');
+INSERT INTO `animals`.`pet_animals` (`id`, `pet_animals_type`, `id_animals`) VALUES ('3', 'Humsters', '1');
+
+INSERT INTO `animals`.`pack_animals` (`id`, `pack_animals_type`, `id_animals`) VALUES ('1', 'Horses', '2');
+INSERT INTO `animals`.`pack_animals` (`id`, `pack_animals_type`, `id_animals`) VALUES ('2', 'Donkeys', '2');
+INSERT INTO `animals`.`pack_animals` (`id`, `pack_animals_type`, `id_animals`) VALUES ('3', 'Camels', '2');
+
+INSERT INTO `animals`.`camels` (`id`, `name`, `birth_date`, `id_pack`) VALUES ('1', 'Kevin', '2020/3/12', '3');
+INSERT INTO `animals`.`camels` (`id`, `name`, `birth_date`, `id_pack`) VALUES ('2', 'Cem', '2022/4/23', '3');
+INSERT INTO `animals`.`camels` (`id`, `name`, `birth_date`, `id_pack`) VALUES ('3', 'Sim', '2021/12/2', '3');
+
+INSERT INTO `animals`.`cats` (`id`, `name`, `birth_date`, `id_pets`) VALUES ('1', 'Murka', '2019/4/27', '2');
+INSERT INTO `animals`.`cats` (`id`, `name`, `birth_date`, `id_pets`) VALUES ('2', 'Mashka', '2020/5/3', '2');
+INSERT INTO `animals`.`cats` (`id`, `name`, `birth_date`, `id_pets`) VALUES ('3', 'Grek', '22/2/24', '2');
+
+INSERT INTO `animals`.`dogs` (`id`, `name`, `birth_date`, `id_pets`) VALUES ('1', 'Jeck', '2023/3/17', '1');
+INSERT INTO `animals`.`dogs` (`id`, `name`, `birth_date`, `id_pets`) VALUES ('2', 'Barbos', '2022/7/11', '1');
+INSERT INTO `animals`.`dogs` (`id`, `name`, `birth_date`, `id_pets`) VALUES ('3', 'Sharik', '2021/8/23', '1');
+
+INSERT INTO `animals`.`humsters` (`id`, `name`, `birth_date`, `id_pets`) VALUES ('1', 'Homa', '2023/3/3', '3');
+INSERT INTO `animals`.`humsters` (`id`, `name`, `birth_date`, `id_pets`) VALUES ('2', 'John', '2022/4/1', '3');
+INSERT INTO `animals`.`humsters` (`id`, `name`, `birth_date`, `id_pets`) VALUES ('3', 'Julya', '2021/3/22', '3');
+
+INSERT INTO `animals`.`donkeys` (`id`, `name`, `birth_date`, `id_pack`) VALUES ('1', 'Wet', '2019/9/12', '2');
+INSERT INTO `animals`.`donkeys` (`id`, `name`, `birth_date`, `id_pack`) VALUES ('2', 'South', '2020/5/25', '2');
+INSERT INTO `animals`.`donkeys` (`id`, `name`, `birth_date`, `id_pack`) VALUES ('3', 'Boris', '2021/7/29', '2');
+
+INSERT INTO `animals`.`horses` (`id`, `name`, `birth_date`, `id_pack`) VALUES ('1', 'North', '2018/6/21', '1');
+INSERT INTO `animals`.`horses` (`id`, `name`, `birth_date`, `id_pack`) VALUES ('2', 'Kondor', '2022/1/23', '1');
+INSERT INTO `animals`.`horses` (`id`, `name`, `birth_date`, `id_pack`) VALUES ('3', 'Rita', '2021/6/19', '1');
+
+
+DROP TABLE camels;
+
+CREATE TABLE animal_pack AS
+SELECT name, birth_date, id_pack FROM horses
+UNION
+SELECT name, birth_date, id_pack FROM donkeys;
+
+CREATE TABLE young_animal AS
+SELECT name, birth_date, (YEAR(NOW())-YEAR(birth_date))*12+(MONTH(NOW())-MONTH(birth_date)) AS age FROM dogs
+WHERE YEAR(NOW())-YEAR(birth_date)>1 AND YEAR(NOW())-YEAR(birth_date)<3
+UNION
+SELECT name, birth_date, (YEAR(NOW())-YEAR(birth_date))*12+(MONTH(NOW())-MONTH(birth_date)) AS age FROM cats
+WHERE YEAR(NOW())-YEAR(birth_date)>1 AND YEAR(NOW())-YEAR(birth_date)<3
+UNION
+SELECT name, birth_date, (YEAR(NOW())-YEAR(birth_date))*12+(MONTH(NOW())-MONTH(birth_date)) AS age FROM humsters
+WHERE YEAR(NOW())-YEAR(birth_date)>1 AND YEAR(NOW())-YEAR(birth_date)<3
+UNION
+SELECT name, birth_date, (YEAR(NOW())-YEAR(birth_date))*12+(MONTH(NOW())-MONTH(birth_date)) AS age FROM horses
+WHERE YEAR(NOW())-YEAR(birth_date)>1 AND YEAR(NOW())-YEAR(birth_date)<3
+UNION
+SELECT name, birth_date, (YEAR(NOW())-YEAR(birth_date))*12+(MONTH(NOW())-MONTH(birth_date)) AS age FROM donkeys
+WHERE YEAR(NOW())-YEAR(birth_date)>1 AND YEAR(NOW())-YEAR(birth_date)<3
+
+CREATE TABLE all_animal AS
+SELECT * FROM dogs
+UNION
+SELECT * FROM cats
+UNION
+SELECT * FROM humsters
+UNION
+SELECT * FROM horses
+UNION
+SELECT * FROM donkeys
+
